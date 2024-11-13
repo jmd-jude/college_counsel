@@ -34,7 +34,7 @@ SAMPLE_SCHOOLS = [
 @st.cache_data
 def fetch_school_data():
     """Fetch and cache school data from the API"""
-    API_KEY = "7Bb3ZS0pAbSLKnnU0ux6gcEzJa6vk4shbNqG3XTh"
+    API_KEY = st.secrets["API_KEY"]
     school_data = {}
 
     for school in SAMPLE_SCHOOLS:
